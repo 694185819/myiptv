@@ -135,13 +135,13 @@ http://150.138.78.253:10050/migu/625133682?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw
 #EXTINF:-1 tvg-name="上海第一财经" tvg-logo="https://live.fanmingming.com/tv/上海第一财经.png" group-title="综合新闻",上海第一财经
 http://150.138.78.253:10050/migu/608780988?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="南京新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E5%8D%97%E4%BA%AC%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="综合新闻",南京新闻综合频道
+#EXTINF:-1 tvg-name="南京新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E5%8D%97%E4%BA%AC%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88.png" group-title="综合新闻",南京新闻综合频道
 http://150.138.78.253:10050/migu/838109047?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="南京科教频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E5%8D%97%E4%BA%AC%E7%A7%91%E6%95%99.png" group-title="综合新闻",南京科教频道
+#EXTINF:-1 tvg-name="南京科教频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E5%8D%97%E4%BA%AC%E7%A7%91%E6%95%99.png" group-title="综合新闻",南京科教频道
 http://150.138.78.253:10050/migu/838153729?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="南京十八频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E5%8D%81%E5%85%AB.%E7%94%9F%E6%B4%BB.png" group-title="综合新闻",南京十八频道
+#EXTINF:-1 tvg-name="南京十八频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E5%8D%81%E5%85%AB.%E7%94%9F%E6%B4%BB.png" group-title="综合新闻",南京十八频道
 http://150.138.78.253:10050/migu/838151753?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="江苏城市频道" tvg-logo="https://live.fanmingming.cn/tv/江苏城市.png" group-title="综合新闻",江苏城市频道
@@ -159,19 +159,19 @@ http://150.138.78.253:10050/migu/626065193?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw
 #EXTINF:-1 tvg-name="江苏公共新闻频道" tvg-logo="https://live.fanmingming.cn/tv/江苏江苏公共新闻.png" group-title="综合新闻",江苏公共新闻频道
 http://150.138.78.253:10050/migu/626064693?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="淮安新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E6%B7%AE%E5%AE%89HABC-%E7%BB%BC%E5%90%88.png" group-title="综合新闻",淮安新闻综合频道
+#EXTINF:-1 tvg-name="淮安新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E6%B7%AE%E5%AE%89HABC-%E7%BB%BC%E5%90%88.png" group-title="综合新闻",淮安新闻综合频道
 http://150.138.78.253:10050/migu/639731826?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="泰州新闻综合频道" tvg-logo="https://live.fanmingming.cn/tv/泰州一套.png" group-title="综合新闻",泰州新闻综合频道
 http://150.138.78.253:10050/migu/639731818?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="连云港新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E8%BF%9E%E4%BA%91%E6%B8%AFLYGTV-1%EF%BC%88%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",连云港新闻综合频道
+#EXTINF:-1 tvg-name="连云港新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E8%BF%9E%E4%BA%91%E6%B8%AFLYGTV-1%EF%BC%88%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",连云港新闻综合频道
 http://150.138.78.253:10050/migu/639731715?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="宿迁新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E5%AE%BF%E8%BF%81SQTV-%E7%BB%BC%E5%90%88.png" group-title="综合新闻",宿迁新闻综合频道
+#EXTINF:-1 tvg-name="宿迁新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E5%AE%BF%E8%BF%81SQTV-%E7%BB%BC%E5%90%88.png" group-title="综合新闻",宿迁新闻综合频道
 http://150.138.78.253:10050/migu/639731832?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-#EXTINF:-1 tvg-name="徐州新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/blob/main/%E5%8F%B0%E6%A0%87/%E5%BE%90%E5%B7%9EXZTV-1%EF%BC%88%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",徐州新闻综合频道
+#EXTINF:-1 tvg-name="徐州新闻综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E5%BE%90%E5%B7%9EXZTV-1%EF%BC%88%E6%96%B0%E9%97%BB%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",徐州新闻综合频道
 http://150.138.78.253:10050/migu/639731747?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 ------------------------------------------------------------------------------------------卫视频道--------------------------------------------------------------------
