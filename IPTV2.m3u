@@ -1,5 +1,13 @@
 #EXTM3U
-
+------------------------------------------------------------------------------------------4K8K--------------------------------------------------------------------
+#EXTINF:-1 tvg-name="北京纪实科教8K" tvg-logo="https://live.fanmingming.com/tv/北京纪实科教.png" group-title="超高清",北京纪实科教8K
+https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
+#EXTINF:-1 tvg-name="咪咕4K" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="超高清",咪咕4K
+http://223.14.171.36:8888/itv/3000000010000005180.m3u8?cdn=FifastbLive
+#EXTINF:-1 tvg-name="咪咕至臻视界" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="超高清",咪咕至臻视界
+http://223.14.171.36:8888/itv/3000000010000015686.m3u8?cdn=FifastbLive
+#EXTINF:-1 tvg-name="苏州4K频道" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="超高清",苏州4K频道
+https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
 ------------------------------------------------------------------------------------------央视--------------------------------------------------------------------
 #EXTINF:-1 tvg-name="CCTV1综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视频道",CCTV1综合
 http://150.138.78.253:10062/migu/608807420?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
@@ -142,7 +150,7 @@ https://sport.pendy.dpdns.org/migu/708869532?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaN
 
 ------------------------------------------------------------------------------------------电影戏剧音乐--------------------------------------------------------------------
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影戏剧音乐",重温经典
-
+https://gdcucc.v1.mk/gdcucc/cwjd.m3u8
 
 #EXTINF:-1 tvg-name="新片放映厅" tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/035/175/202405061742_1714988181593_H169_1080.jpg" group-title="电影戏剧音乐",新片放映厅
 http://150.138.78.253:10062/migu/619495952?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
@@ -243,8 +251,6 @@ https://sport.pendy.dpdns.org/migu/639731747?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaN
 #EXTINF:-1 tvg-name="亳州综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E4%BA%B3%E5%B7%9EBZTV-1%EF%BC%88%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",亳州综合频道
 http://112.123.217.208:85/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
 ------------------------------------------------------------------------------------------卫视频道--------------------------------------------------------------------
-#EXTINF:-1 tvg-name="北京纪实科教8K" tvg-logo="https://live.fanmingming.com/tv/北京纪实科教.png" group-title="卫视频道",北京纪实科教8K
-https://gdcucc.v1.mk/gdcucc/brtv8k.m3u8
 
 #EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://live.fanmingming.cn/tv/北京卫视.png" group-title="卫视频道",北京卫视
 http://itv.iptv1688.top:2016/itv.php?id=北京卫视
