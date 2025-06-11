@@ -313,7 +313,7 @@ http://171.38.64.239:8181/tsfile/live/1218_1.m3u8
 #EXTINF:-1,tvg-name="玉林公共" tvg-logo="https://raw.githubusercontent.com/694185819/myiptv/main/台标/玉林公共.png" group-title="综合新闻",玉林公共
 http://171.38.64.239:8181/tsfile/live/1219_1.m3u8
 
-#EXTINF:-1,tvg-name="福州都市生活" tvg-logo="https://raw.githubusercontent.com/694185819/myiptv/main/台标/福州都市生活.png" group-title="综合新闻",福州都市生活
+#EXTINF:-1,tvg-name="福州都市生活" tvg-logo="https://raw.githubusercontent.com/694185819/myiptv/main/台标/福州FZTV-3（都市生活）.png" group-title="综合新闻",福州都市生活
 http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
 
 #EXTINF:-1,tvg-name="滁州公共" tvg-logo="https://epg.v1.mk/logo/滁州公共.png" group-title="综合新闻",滁州公共
