@@ -15,10 +15,8 @@ https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
 ------------------------------------------------------------------------------------------央视--------------------------------------------------------------------
 #EXTINF:-1 tvg-name="CCTV1综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视频道",CCTV1综合
 http://150.138.78.253:10062/migu/608807420?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1016_1.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel15/1080p.m3u8
 http://112.123.217.208:85/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0
-https://sport.pendy.dpdns.org/migu/608807420?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV2财经" tvg-logo="https://live.fanmingming.cn/tv/CCTV2.png" group-title="央视频道",CCTV2财经
 http://150.138.78.253:10062/migu/631780532?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
@@ -54,109 +52,77 @@ https://sport.pendy.dpdns.org/migu/673168121?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaN
 
 #EXTINF:-1 tvg-name="CCTV8电视剧" tvg-logo="https://live.fanmingming.cn/tv/CCTV8.png" group-title="央视频道",CCTV8电视剧
 http://150.138.78.253:10062/migu/624878356?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1023_1.m3u8
 http://113.15.109.216:59901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0
-https://sport.pendy.dpdns.org/migu/624878356?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV9记录" tvg-logo="https://live.fanmingming.cn/tv/CCTV9.png" group-title="央视频道",CCTV9纪录
 http://150.138.78.253:10062/migu/673168140?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1024_1.m3u8
 http://120.76.248.139/live/bfgd/4200000128.m3u8
-https://sport.pendy.dpdns.org/migu/673168140?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV10科教" tvg-logo="https://live.fanmingming.cn/tv/CCTV10.png" group-title="央视频道",CCTV10科教
 http://150.138.78.253:10062/migu/624878405?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1025_1.m3u8
 http://112.123.217.208:85/tsfile/live/0010_1.m3u8?key=txiptv&playlive=1&authid=0
-https://sport.pendy.dpdns.org/migu/624878405?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV11戏曲" tvg-logo="https://live.fanmingming.cn/tv/CCTV11.png" group-title="央视频道",CCTV11戏曲
 http://150.138.78.253:10062/migu/667987558?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1026_1.m3u8
-https://sport.pendy.dpdns.org/migu/667987558?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV12社会与法" tvg-logo="https://live.fanmingming.cn/tv/CCTV12.png" group-title="央视频道",CCTV12社会与法
 http://150.138.78.253:10062/migu/673168185?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1027_1.m3u8
 http://119.32.12.17:2901/udp/224.1.100.78:11111
-https://sport.pendy.dpdns.org/migu/673168185?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV13新闻" tvg-logo="https://live.fanmingming.cn/tv/CCTV13.png" group-title="央视频道",CCTV13新闻
 http://150.138.78.253:10062/migu/608807423?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1028_1.m3u8
-https://sport.pendy.dpdns.org/migu/608807423?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV14少儿" tvg-logo="https://live.fanmingming.cn/tv/CCTV14.png" group-title="央视频道",CCTV14少儿
 http://150.138.78.253:10062/migu/624878440?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1029_1.m3u8
-https://sport.pendy.dpdns.org/migu/624878440?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV15音乐" tvg-logo="https://live.fanmingming.cn/tv/CCTV15.png" group-title="央视频道",CCTV15音乐
 http://150.138.78.253:10062/migu/673168223?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1030_1.m3u8
 http://222.134.245.16:9901/tsfile/live/0015_1.m3u8
-https://sport.pendy.dpdns.org/migu/673168223?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CCTV16奥林匹克" tvg-logo="https://live.fanmingming.cn/tv/CCTV16.png" group-title="央视频道",CCTV16奥林匹克
-http://171.38.64.239:8181/tsfile/live/1031_1.m3u8
 
 #EXTINF:-1 tvg-name="CCTV17农业农村" tvg-logo="https://live.fanmingming.cn/tv/CCTV17.png" group-title="央视频道",CCTV17农业农村
 http://150.138.78.253:10062/migu/673168256?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1032_1.m3u8
 http://222.169.85.8:9901/tsfile/live/0007_1.m3u8
-https://sport.pendy.dpdns.org/migu/673168256?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="央视频道",CGTN
 http://150.138.78.253:10062/migu/609017205?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609017205?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="央视频道",CGTN英语
 https://0472.org/hls/cgtn.m3u8
 #EXTINF:-1 tvg-name="CGTN纪录" tvg-logo="https://live.fanmingming.cn/tv/CGTN纪录.png" group-title="央视频道",CGTN外语记录
 http://150.138.78.253:10062/migu/609006487?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609006487?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://live.fanmingming.cn/tv/CGTN俄语.png" group-title="央视频道",CGTN俄语
 http://150.138.78.253:10062/migu/609006446?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609006446?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN法语" tvg-logo="https://live.fanmingming.cn/tv/CGTN法语.png" group-title="央视频道",CGTN法语
 http://150.138.78.253:10062/migu/609006476?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609006476?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN西班牙语" tvg-logo="https://live.fanmingming.cn/tv/CGTN西语.png" group-title="央视频道",CGTN西班牙语
 http://150.138.78.253:10062/migu/609006450?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609006450?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CGTN阿拉伯语" tvg-logo="https://live.fanmingming.cn/tv/CGTN阿语.png" group-title="央视频道",CGTN阿拉伯语
 http://150.138.78.253:10062/migu/609154345?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/609154345?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 ------------------------------------------------------------------------------------------国家级教育电视台--------------------------------------------------------------------
 #EXTINF:-1 tvg-name="CETV1" tvg-logo="https://live.fanmingming.cn/tv/CETV1.png" group-title="国家级教育电视台",CETV1
 http://150.138.78.253:10062/migu/923287154?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-http://171.38.64.239:8181/tsfile/live/1083_1.m3u8
-https://sport.pendy.dpdns.org/migu/923287154?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CETV2" tvg-logo="https://live.fanmingming.cn/tv/CETV2.png" group-title="国家级教育电视台",CETV2
 http://150.138.78.253:10062/migu/923287211?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/923287211?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="CETV4" tvg-logo="https://live.fanmingming.cn/tv/CETV4.png" group-title="国家级教育电视台",CETV4
 http://150.138.78.253:10062/migu/923287339?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/923287339?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="老故事" tvg-logo="https://live.fanmingming.cn/tv/老故事.png" group-title="国家级教育电视台",老故事
 http://150.138.78.253:10062/migu/884121956?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/884121956?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="发现之旅" tvg-logo="https://live.fanmingming.cn/tv/发现之旅.png" group-title="国家级教育电视台",发现之旅
 http://150.138.78.253:10062/migu/624878970?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/624878970?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 #EXTINF:-1 tvg-name="中学生" tvg-logo="https://live.fanmingming.cn/tv/中学生.png" group-title="国家级教育电视台",中学生
 http://150.138.78.253:10062/migu/708869532?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
-https://sport.pendy.dpdns.org/migu/708869532?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
 ------------------------------------------------------------------------------------------电影戏剧音乐--------------------------------------------------------------------
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="电影戏剧音乐",重温经典
