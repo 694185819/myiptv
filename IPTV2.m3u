@@ -317,7 +317,7 @@ http://3739115337.cloudvdn.com/a.m3u8?domain=siyang-tv-hls.cm.jstv.com&player=nw
 http://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
 https://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
 
-#EXTINF:-1,tvg-name="滨海新闻综合" tvg-logo="滨海新闻综合.png" group-title="综合新闻",滨海新闻综合
+#EXTINF:-1,tvg-name="滨海新闻综合" tvg-logo="https://epg.v1.mk/logo/滨海1.png" group-title="综合新闻",滨海新闻综合
 http://traffic.jbh.tjbh.com/live/bhtv10/playlist.m3u8
 
 #EXTINF:-1,tvg-name="苏州社会经济" tvg-logo="https://raw.githubusercontent.com/694185819/myiptv/main/台标/苏州SZTV-2（社会经济）.png" group-title="综合新闻",苏州社会经济
