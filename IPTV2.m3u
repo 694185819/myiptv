@@ -214,6 +214,10 @@ http://150.138.78.253:10062/migu/639731747?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw
 
 #EXTINF:-1 tvg-name="亳州综合频道" tvg-logo="https://github.com/694185819/myiptv/raw/main/%E5%8F%B0%E6%A0%87/%E4%BA%B3%E5%B7%9EBZTV-1%EF%BC%88%E7%BB%BC%E5%90%88%EF%BC%89.png" group-title="综合新闻",亳州综合频道
 http://112.123.217.208:85/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
+http://zbbf2.ahbztv.com/live/416.m3u8?zanhd
+
+亳州农村
+http://zbbf2.ahbztv.com/live/418.m3u8
 
 #EXTINF:-1,tvg-name="广东珠江" tvg-logo="https://epg.v1.mk/logo/广东珠江.png" group-title="综合新闻",广东珠江
 https://tv.cdn.com.mp/live/gdzj/stream.m3u8
@@ -287,8 +291,10 @@ http://play-sh13.quklive.com/live/1699001836208185.m3u8?auth_key=2027429324-c77b
 舟山公共
 http://play-sh13.quklive.com/live/1699002430299200.m3u8?auth_key=2027429366-f4515e585a0347f780a01c73ae293945-0-b3699e931cf04290680745e989c63d86
 
-新闻综合
+太谷新闻综合
 http://p2.vzan.com/slowlive/596867413819827251/live.m3u8
+https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&amp;amp;tpid=1516989100&amp;amp;type=0
+https://p2.vzan.com/slowlive/596867413819827251/live.m3u8?zbid=1725814272&tpid=1516989100&type=0
 
 璧山
 http://222.179.42.129:8181/hls1.m3u8
@@ -324,6 +330,156 @@ http://p2.vzan.com/527645544/149039617847513156/live.m3u8
 
 https://epg.v1.mk/logo/晋中公共.png
 http://jzlive.jztvnews.com:90/live/jzgg.m3u8
+
+甘南县综合
+rtmp://masterpull.hljtv.com/live/YbFyF4Jb
+
+民和综合
+http://livecdn.dmqhyadmin.com/hls/xjminhe.m3u8?zqinghd#http://livecdn.dmqhyadmin.com/hls/xjminhe.m3u8
+
+麻栗坡电视台
+http://tvdrs.wsrtv.com.cn:8100/channellive/mlptv.flv?zyund
+
+通海电视台
+https://zb-live.ynurl.com/tonghai/3bfe3a9e-48e6-4c1e-8770-1df66447cc6c.m3u8
+
+易门综合
+https://zb-live.ynurl.com/yimen/3b75a2f9-7941-46b7-992d-a9796fbca5fe.m3u8
+
+蒙语文化
+https://livestream-bt.nmtv.cn/nmtv/2321general.m3u8?txSecret=d9d0fd7a252ef56b515c46a2e21830f4&txTime=771E8800
+
+内蒙农牧
+https://livestream-bt.nmtv.cn/nmtv/2320general.m3u8?txSecret=4d368a175afa19737a9f5be10af24fe2&txTime=771E8800
+http://play1-qk.nmtv.cn:80/live/1686561299036179.m3u8
+
+内蒙文体
+https://livestream-bt.nmtv.cn/nmtv/2319general.m3u8?txSecret=c7b5c515d2bb6df442492d54955329a3&txTime=771E8800
+
+祁门综合
+rtmp://tv.qmxrmt.com/chan/ch1?zanhd
+rtmp://tv.qmxrmt.com/chan/ch1
+
+固镇新闻
+http://www.guzhenm.com:7001/hls/hd-live.m3u8
+
+安徽导视
+http://dspdhls.appcoo.com:8888/live/dspd/index.m3u8
+
+黎城综合
+http://111.53.96.67:8081/live/1/index.m3u8
+http://111.53.96.67:8081/live/1/index.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+
+吉县新闻综合
+http://jxlive.jxrmtzx.com:8091/live/xwzh.m3u8
+
+临沂经济
+https://m3u8-channel.lytv.tv/nmip-media/channellive/channel115062/playlist.m3u8
+
+巴音郭楞州
+rtmp://tv.loulannews.cn/channellive/ch1
+
+兵团八师石河子新闻综合
+http://124.88.144.73:1935/live/xwzh/playlist.m3u8?zxinjd
+
+伊犁经济法制
+http://110.153.180.106:55555/out_4/index.m3u8
+
+伊犁哈萨克
+http://110.153.180.106:55555/out_3/index.m3u8
+
+伊犁维吾尔
+http://110.153.180.106:55555/out_2/index.m3u8
+
+伊犁汉语综合
+http://110.153.180.106:55555/out_1/index.m3u8
+
+通渭综合
+https://play.kankanlive.com/live/1725005047185027.m3u8
+
+白银综合
+http://play.kankanlive.com/live/1720408089419110.m3u8
+https://play.kankanlive.com/live/1720408089419110.m3u8
+
+甘南藏语
+http://play.kankanlive.com/live/1720408280309109.m3u8
+
+渭源新闻
+https://play.kankanlive.com/live/1711955176432990.m3u8
+
+武威新闻
+https://play.kankanlive.com/live/1693539781636986.m3u8
+
+武威凉州
+http://lishiwan.xicp.net:8563/udp/239.255.36.106:8231
+
+景泰综合
+https://play.kankanlive.com/live/1624439143745981.m3u8
+
+成县综合
+https://play.kankanlive.com/live/1702454377323961.m3u8
+
+嘉峪关综合
+http://play.kankanlive.com/live/1720583434627241.m3u8
+
+七星关电视台
+https://p8.vzan.com:443/slowlive/147077707554082780/live.m3u8
+
+河南都市
+http://1.94.31.214/php/hntv.php?id=hnds
+http://v4d.xiepeiru.top:1123/iptv/hm/HeNanDuShi
+
+淅川电视
+http://live.dxhmt.cn:9081/tv/11326-1.m3u8
+
+周口扶沟
+http://live.dxhmt.cn:9081/tv/11621-1.m3u8
+
+长宁综合
+rtmp://cnpull.sccnfb.com/live/123456
+
+金川新闻综合
+rtmp://139.203.180.9/live/zhxw
+rtmp://live.jinchuanrmt.com/live/zhxw
+
+沐川综合
+rtmp://tv.mcrm.org.cn:1935/channellive/tv01
+
+旺苍新闻综合
+rtmp://tv.wcrmt.cn/channellive/ch1
+
+广安文旅乡村
+http://live1.gatv.com.cn:85/live/GGPD.m3u8
+
+小金综合
+rtmp://xjlive.xjxrmt.cn/live/xwpd
+
+宝兴综合
+rtmp://tv.yunxya.com:1937/channellive/baoxing
+https://m3u8channel-bx.yunxya.com/nmip-media/channellive/channel104666/playlist.m3u8
+
+夹江新闻综合
+rtmp://tv.jjrm.org.cn/channellive/ch1?zsicd
+http://tvfile.jjrm.org.cn/nmip-media/channellive/channel106282/playlist.m3u8
+
+名山综合
+rtmp://tv.yunxya.com:1937/channellive/mingshan
+
+双流综合
+http://171.221.250.130:18888/27e684978eb642eeb90ab815f6cc51bf/c41893de5e8645b3b43aef1640859b0d.m3u8?zsicd,
+
+剑阁综合
+https://tvfile.scjgtv.cn/nmip-media/channellive/channel104126/playlist.m3u8
+
+井研新闻综合
+http://tvfile.jyrmt.cn/nmip-media/channellive/channel104452/playlist.m3u8
+
+黔南1套
+rtmp://tv.qntv.net/channellive/ch1?zguizd
+
+
+
+
 
 ------------------------------------------------------------------------------------------卫视频道--------------------------------------------------------------------
 
@@ -517,9 +673,8 @@ http://150.138.78.253:10062/migu/614952364?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw
 #EXTINF:-1 tvg-name="优漫卡通" tvg-logo="https://live.fanmingming.cn/tv/优漫卡通.png" group-title="动画频道",优漫卡通
 http://150.138.78.253:10062/migu/626064703?token=pot6r9IwRGUk6qtuKS-qlaNa1xvaNVw1Z4VkYd036FJGkWd2fyqAv90F3V76dIm-nIbicHC3F9Uca6PzHXf3rw&auth=
 
-
-#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/315/652/202204010055_5101034205_H169_1080.jpg" group-title="动画频道", 经典动画大集合
-
+内蒙少儿
+https://livestream-bt.nmtv.cn/nmtv/2318general.m3u8?txSecret=a2c948908728a0733cecbe1fadea23dc&txTime=771E8800
 
 #EXTINF:-1 tvg-name="浙江少儿"  tvg-logo="https://epg.v1.mk/logo/浙江少儿.png" group-title="动画频道",浙江少儿
 https://ct-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8
@@ -533,6 +688,8 @@ http://171.38.64.239:8181/tsfile/live/1046_1.m3u8
 http://218.15.183.23:9901/tsfile/live/23045_1.m3u8
 
 #EXTINF:-1 tvg-name="卡酷少儿" tvg-logo="https://live.fanmingming.cn/tv/卡酷少儿.png" group-title="动画频道",卡酷少儿
+
+#EXTINF:-1 tvg-logo="https://wapx.cmvideo.cn/publish/poms/image/5500/315/652/202204010055_5101034205_H169_1080.jpg" group-title="动画频道", 经典动画大集合
 
 ------------------------------------------------------------------------------------------香港频道--------------------------------------------------------------------
 
