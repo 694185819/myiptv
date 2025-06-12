@@ -304,9 +304,60 @@ http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 http://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 
+#EXTINF:-1,tvg-name="浙江国际" tvg-logo="https://epg.v1.mk/logo/浙江国际.png" group-title="综合新闻",浙江国际
+http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8?zzhed
+
+嘉兴新闻综合
+https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
+
+嘉兴公共
+http://play-sh13.quklive.com/live/1675149601192103.m3u8?auth_key=2028730429-9ab7f7f0267946e880ec46ce3d57ec9e-0-eb04d7f7e549054293604b04150cefa1
+新闻综合
+http://tvfile.jyrmt.cn:80/nmip-media/channellive/channel104452/playlist.m3u8
+
+舟山新闻综合
+http://play-sh13.quklive.com/live/1699001836208185.m3u8?auth_key=2027429324-c77bb6a7063c4cdea57f09ca22f9ef12-0-39c19a21f73b823db2150ea45b147eb2
+
+舟山公共
+http://play-sh13.quklive.com/live/1699002430299200.m3u8?auth_key=2027429366-f4515e585a0347f780a01c73ae293945-0-b3699e931cf04290680745e989c63d86
 
 新闻综合
-http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8
+http://p2.vzan.com/slowlive/596867413819827251/live.m3u8
+
+璧山
+http://222.179.42.129:8181/hls1.m3u8
+
+垫江综合
+rtmp://play-sh.quklive.com/live/1672366847646284
+
+南通都市生活
+https://cm-live.ntjoy.com/live/4
+
+泗洪新闻综合
+http://3739115337.cloudvdn.com/a.m3u8?domain=siyang-tv-hls.cm.jstv.com&player=nwEAAKHdjSKP_58X&secondToken=secondToken%3A5FUijZmDyNMxtCDdne0YzSAwjuw&streamid=siyang-tv%3Asiyang-tv%2Fsiyangzh&v3=1
+
+溧水新闻综合
+http://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
+https://lishui-tv-hls.cm.jstv.com/lishui-tv/lsxwzh.m3u8
+
+滨海新闻综合
+http://traffic.jbh.tjbh.com/live/bhtv10/playlist.m3u8
+
+苏州社会经济
+https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
+
+镇江二套社会民生https://epg.v1.mk/logo/镇江2.png
+http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
+
+https://epg.v1.mk/logo/镇江新闻综合.png
+http://zjtv-wshls.homecdn.com/live/2aa50.m3u8?wsSession=a263bdc5a26cd01b57a80359-170493712215358&amp;wsIPSercert=f56bd6194d219a5172dbed60eca6e9b0
+http://cm-wshls.homecdn.com/live/2aa50.m3u8
+
+https://epg.v1.mk/logo/湖南爱晚.png
+http://p2.vzan.com/527645544/149039617847513156/live.m3u8
+
+https://epg.v1.mk/logo/晋中公共.png
+http://jzlive.jztvnews.com:90/live/jzgg.m3u8
 
 ------------------------------------------------------------------------------------------卫视频道--------------------------------------------------------------------
 
