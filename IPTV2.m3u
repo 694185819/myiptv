@@ -239,6 +239,15 @@ http://zbbf2.ahbztv.com/live/418.m3u8
 https://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=550af55c0ea34ce492748481415b6dfa&txTime=1903e7b17de
 http://tencentplay.gztv.com/live/nanguodushi.m3u8?txSecret=140110ae3d6c936a77f94c4f4d85b0d3&txTime=18d57929bd4
 
+#EXTINF:-1 tvg-name="广州新闻" tvg-logo="https://epg.v1.mk/logo/广州新闻.png" group-title="综合新闻",广州新闻
+http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
+
+#EXTINF:-1 tvg-name="广州法治" tvg-logo="https://epg.v1.mk/logo/广州法治.png" group-title="综合新闻",广州法治
+http://tencentplay.gztv.com/live/fazhi.m3u8?txSecret=3e84cd8eba844b5dc2150612295c7a52&txTime=18d578f4493
+
+#EXTINF:-1 tvg-name="广州综合" tvg-logo="https://epg.v1.mk/logo/广州综合.png" group-title="综合新闻",广州综合
+http://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=c8dbe86d6f86eb1a21999ab479fd5667&txTime=18d3c4690e8
+
 #EXTINF:-1,tvg-name="广东珠江" tvg-logo="https://epg.v1.mk/logo/广东珠江.png" group-title="综合新闻",广东珠江
 https://tv.cdn.com.mp/live/gdzj/stream.m3u8
 http://cdn2.163189.xyz/live/gdzj/stream.m3u8
@@ -565,9 +574,39 @@ rtmp://tv.qntv.net/channellive/ch1?zguizd
 安顺新闻,http://hplayer1.juyun.tv/camera/154379194.m3u8
 宜兴新闻,https://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8
 宜兴新闻,http://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8?zjiangsd
-未知综合,http://3gvod.zjgonline.com.cn:1935/live/_definst_/xinwenzonghe_app/chunklist.m3u8
 宜兴紫砂,http://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_zs.m3u8?zjiangsd
 宜阳综合,http://tvpull.dxhmt.cn:9081/tv/10327-1.m3u8
+宝丰综合,http://tvpull.dxhmt.cn:9081/tv/10421-1.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+嵊州新闻综合,http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8?zzhed#http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
+巩义新闻综合,http://tvpull.dxhmt.cn:9081/tv/10181-1.m3u8?zhend
+巴彦淖尔新闻综合,https://livestream-bt.nmtv.cn/nmtv/2348general.m3u8?txSecret=6a4ddce077e41b976fe33619fbef2b30&txTime=771E8800
+常熟民生,http://3gvod.zjgonline.com.cn:1935/live/_definst_/shehuishenghuo_app/chunklist.m3u8
+常熟新闻综合,http://3gvod.zjgonline.com.cn:1935/live/_definst_/xinwenzonghe_app/chunklist.m3u8
+平泉综合,https://jwcdnqx.hebyun.com.cn/live/pqzh/1500k/tzwj_video.m3u8
+平湖新闻综合,http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8?zzhed
+广元公共,https://m3u8.channel.dzsm.com/nmip-media/channellive/channel101257/playlist.m3u8
+广元综合,https://m3u8.channel.dzsm.com/nmip-media/channellive/channel100999/playlist.m3u8
+怀仁综合,https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc-1.m3u8
+怀仁综合,http://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa2543628fc4a7ea93d3d6c975f77dc.m3u8?zshanxd
+德惠综合,http://stream11.jlntv.cn/dehuitv/sd/live.m3u8
+德阳公共,文旅科教,http://scdytv.cn:1935/live/m_ggpd_livevideo/playlist.m3u8
+德阳公共,文旅科教,http://scdytv.cn:1935/live/m_ggpd_livevideo/playlist.m3u8?zsicd
+德阳新闻综合,http://scdytv.cn:1935/live/m_xwpd_livevideo/playlist.m3u8?zsicd
+成县综合,https://play.kankanlive.com/live/1702454377323961.m3u8
+扶沟综合,http://tvpull.dxhmt.cn:9081/tv/11621-1.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+攀枝花新闻综合,http://live.pzhkai.com/xwzhtl/sd/live.m3u8
+文山州公共,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8
+文山州公共,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel8/playlist.m3u8?zyund
+文山州新闻综合,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel7/playlist.m3u8?zyund
+文成新闻综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8
+文成综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?fbl=
+文成综合,http://l.cztvcloud.com/channels/lantian/SXwencheng1/720p.m3u8?zzhed
+新乡县电视台,http://tvpull.dxhmt.cn:9081/tv/10721-1.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+新安新闻综合,http://tvpull.dxhmt.cn:9081/tv/10323-1.m3u8?zhend
+新蔡综合,http://tvpull.dxhmt.cn:9081/tv/11729-1.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
+新野综合,http://tvpull.dxhmt.cn:9081/tv/11329-1.m3u8?zhend
+方城一套,http://tvpull.dxhmt.cn:9081/tv/11322-1.m3u8
+
 
 
 
