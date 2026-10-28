@@ -154,44 +154,76 @@ def render(channels):
     return lines
 
 
+def split_groups(lines):
+    """把播放列表解析成 {分组名: [条目行...]}，保持原顺序。"""
+    head, groups, order, cur = [], {}, [], None
+    for line in lines:
+        if line.startswith("# ====="):
+            name = line.strip("# =").split("(")[0].strip()
+            cur = name
+            if name not in groups:
+                groups[name] = []
+                order.append(name)
+            groups[name].append(line)          # 保留原分组标题（稍后校正计数）
+            continue
+        if line.startswith("#EXTM3U"):
+            head.append(line)
+            continue
+        if line.startswith("#"):
+            if cur is not None:
+                groups[cur].append(line)
+            else:
+                head.append(line)
+            continue
+        if not line.strip():
+            continue
+        if cur is None:
+            head.append(line)
+        else:
+            groups[cur].append(line)
+    return head, groups, order
+
+
+ORDER_FIRST = ["超高清", GROUP]
+
+
 def splice(channels, mode):
     if not os.path.exists(PLAYLIST):
         sys.exit(f"找不到 {PLAYLIST}")
     raw = open(PLAYLIST, encoding="utf-8").read().splitlines()
+    head, groups, order = split_groups(raw)
 
-    # 去掉旧的「央视频」分组和旧分组标记
-    kept, skipping = [], False
-    for line in raw:
-        if line.startswith("# ====="):
-            skipping = line.startswith(f"# ===== {GROUP}")
-            if skipping:
-                continue
-        if skipping:
-            continue
-        kept.append(line)
+    # 过滤掉旧注释里的提示行，重新加
+    head = [l for l in head if not l.startswith("# 央视频分组为") and not l.startswith("# 超高清分组")]
 
-    block = [f'# ===== {GROUP} ({len(channels)}) ====='] + render(channels)
     if mode == "proxy":
-        note = ("# 央视频分组走本地代理 http://127.0.0.1:8766/all.m3u（持续直播，需本机保持 ysp-live 运行）")
+        note = "# 央视频分组走本地代理 http://127.0.0.1:8766/all.m3u（持续直播，需本机保持 ysp-live 运行）"
     else:
-        note = (f"# 央视频分组为直连快照（{time.strftime('%Y-%m-%d %H:%M')} 生成）：地址有效期约 5 分钟，过期需重新运行本脚本")
+        note = (f"# 央视频分组为直连快照（{time.strftime('%Y-%m-%d %H:%M')} 生成）："
+                "地址有效期约 5 分钟，过期需重新运行本脚本")
+    # 注释紧跟 #EXTM3U 之后，其余头部注释原样保留
+    rest_head = [l for l in head[1:] if l.strip()]
+    head = [head[0], note] + rest_head
 
-    # 插到分组标记之前，替换首行注释
-    out = []
-    inserted = False
-    for line in kept:
-        if line.startswith("#EXTM3U"):
-            out.append(line)
-            out.append(note)
-            continue
-        if line.startswith("# 央视频分组为") or line.startswith("# 由 GitHub"):
-            continue
-        if line.startswith("# =====") and not inserted:
-            out.extend(block)
-            inserted = True
-        out.append(line)
-    if not inserted:
-        out.extend(block)
+    # 写入新央视频分组
+    groups[GROUP] = [f"# ===== {GROUP} ({len(channels)}) ====="] + render(channels)
+
+    # 固定顺序：超高清 -> 央视频 -> 其余保持原顺序
+    first = [g for g in ORDER_FIRST if g in groups]
+    rest = [g for g in order if g not in first and g != GROUP]
+    if GROUP not in order:
+        rest = [g for g in order if g not in first]
+    final_order = first + rest
+
+    out = list(head)
+    for g in final_order:
+        body = groups[g]
+        # 校正分组标题里的计数
+        if body and body[0].startswith("# ====="):
+            n = sum(1 for l in body
+                    if l.startswith("#EXTINF") and not l.rsplit(",", 1)[-1].endswith("-备用"))
+            body = [f"# ===== {g} ({n}) ====="] + body[1:]
+        out.extend(body)
 
     open(PLAYLIST, "w", encoding="utf-8", newline="\n").write("\n".join(out) + "\n")
     log(f"已写入 {PLAYLIST}，共 {sum(1 for l in out if l.startswith('#EXTINF'))} 条")
