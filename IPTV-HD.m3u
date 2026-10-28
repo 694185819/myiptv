@@ -1,6 +1,17 @@
 #EXTM3U
 # 由 GitHub 公开 IPTV 源实测合并生成：ffprobe 校验真实分辨率 + 播放实测 + 同名去重（更新于 2026-10-29 01:30）
 # 央视频分组为直连快照：地址有效期约 5 分钟，过期后需重新生成，或改用本地代理 http://127.0.0.1:8766/all.m3u
+# ===== 超高清 (5) =====
+#EXTINF:-1 tvg-name="CCTV-4K 超高清" tvg-logo="https://live.fanmingming.cn/tv/CCTV-4K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="超高清",CCTV-4K 超高清
+http://27.148.240.185/PLTV/88888888/224/3221227333/1.m3u8
+#EXTINF:-1 tvg-name="北京卫视4K" tvg-logo="https://live.fanmingming.cn/tv/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%864K.png" group-title="超高清",北京卫视4K
+http://27.148.240.185/PLTV/88888888/224/3221227310/1.m3u8
+#EXTINF:-1 tvg-name="广东卫视4K" tvg-logo="https://live.fanmingming.cn/tv/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%864K.png" group-title="超高清",广东卫视4K
+http://27.148.240.185/PLTV/88888888/224/3221227404/1.m3u8
+#EXTINF:-1 tvg-name="深圳卫视4K" tvg-logo="https://live.fanmingming.cn/tv/%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%864K.png" group-title="超高清",深圳卫视4K
+http://27.148.240.185/PLTV/88888888/224/3221227408/1.m3u8
+#EXTINF:-1 tvg-name="苏州4K频道" tvg-logo="https://live.fanmingming.cn/tv/%E8%8B%8F%E5%B7%9E4K%E9%A2%91%E9%81%93.png" group-title="超高清",苏州4K频道
+https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
 # ===== 央视频 (55) =====
 #EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV-1%E7%BB%BC%E5%90%88.png" group-title="央视频",CCTV-1 综合
 http://tlivecloud-playback-cdn.ysp.cctv.cn/tcloud.cctv.com/52A3C90FAA127C6104122C38073F2EFBD181F041F1FB4BD7327B9639619BD8FFF47E68A678F86F0B63F8844D8CE967154254AD5B373087E3ABF20CF6C0940A073D8BEA26F08F64421CC1FD2F1ED5E26DA8003A85867B79F91BD15FC770E2CF86/2024078203.m3u8?starttime=1793208283&endtime=1793208583&svrtime=1793208584&sid=2024078203
