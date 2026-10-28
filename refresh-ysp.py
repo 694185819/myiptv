@@ -184,7 +184,7 @@ def split_groups(lines):
     return head, groups, order
 
 
-ORDER_FIRST = ["超高清", GROUP]
+ORDER_FIRST = ["超高清", GROUP, "央视", "卫视"]
 
 
 def splice(channels, mode):
