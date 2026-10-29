@@ -1,9 +1,9 @@
 #EXTM3U
 # 由 GitHub 公开 IPTV 源实测合并生成：ffprobe 校验真实分辨率 + 播放实测 + 同名去重（更新于 2026-10-29 01:30）
 # 央视频分组为直连快照：地址有效期约 5 分钟，过期后需重新生成，或改用本地代理 http://127.0.0.1:8766/all.m3u
-# ===== 超高清 (5) =====
+# ===== 超高清 (8) =====
 #EXTINF:-1 tvg-name="CCTV-4K 超高清" tvg-logo="https://live.fanmingming.cn/tv/CCTV-4K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="超高清",CCTV-4K 超高清
-http://27.148.240.185/PLTV/88888888/224/3221227333/1.m3u8
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv4k.m3u8
 #EXTINF:-1 tvg-name="北京卫视4K" tvg-logo="https://live.fanmingming.cn/tv/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%864K.png" group-title="超高清",北京卫视4K
 http://27.148.240.185/PLTV/88888888/224/3221227310/1.m3u8
 #EXTINF:-1 tvg-name="广东卫视4K" tvg-logo="https://live.fanmingming.cn/tv/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%864K.png" group-title="超高清",广东卫视4K
@@ -12,6 +12,12 @@ http://27.148.240.185/PLTV/88888888/224/3221227404/1.m3u8
 http://27.148.240.185/PLTV/88888888/224/3221227408/1.m3u8
 #EXTINF:-1 tvg-name="苏州4K频道" tvg-logo="https://live.fanmingming.cn/tv/%E8%8B%8F%E5%B7%9E4K%E9%A2%91%E9%81%93.png" group-title="超高清",苏州4K频道
 https://tylive.kan0512.com/norecord/csztv4k_4k.m3u8
+#EXTINF:-1 tvg-name="CCTV-16 4K" tvg-logo="https://live.fanmingming.cn/tv/CCTV-164K.png" group-title="超高清",CCTV-16 4K
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv164k.m3u8
+#EXTINF:-1 tvg-name="CCTV-8K(实为4K)" tvg-logo="https://live.fanmingming.cn/tv/CCTV-8K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="超高清",CCTV-8K(实为4K)
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv8k.m3u8
+#EXTINF:-1 tvg-name="CCTV-8K 超高清" tvg-logo="https://live.fanmingming.cn/tv/CCTV-8K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="超高清",CCTV-8K 超高清
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv8k.m3u8
 # ===== 央视频 (55) =====
 #EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV-1%E7%BB%BC%E5%90%88.png" group-title="央视频",CCTV-1 综合
 http://tlivecloud-playback-cdn.ysp.cctv.cn/tcloud.cctv.com/52A3C90FAA127C6104122C38073F2EFBD181F041F1FB4BD7327B9639619BD8FFF47E68A678F86F0B63F8844D8CE967154254AD5B373087E3ABF20CF6C0940A073D8BEA26F08F64421CC1FD2F1ED5E26DA8003A85867B79F91BD15FC770E2CF86/2024078203.m3u8?starttime=1793208283&endtime=1793208583&svrtime=1793208584&sid=2024078203
@@ -123,6 +129,130 @@ https://hlsliveali-cdn.ysp.cctv.cn/63C567A082D20F5BA9B23191896F5C31C23CD4460753A
 https://mobilelive-playback.ysp.cctv.cn/1F839F7586CCD4ADAA98D981219FC163D98792D30FE7CC110D436F42E8FEA1CF46CB27202F4257958EE1EF91191DF2C6912348AB620CDFA084294B91C80D4BE43A1CB481EDD5E65B339E4085B74264682B1523C34138B7FB98F854E23F1C4658/2022823801.m3u8?starttime=1793208283&endtime=1793208583&svrtime=1793208600&sid=2022823801
 #EXTINF:-1 tvg-name="国学频道" tvg-logo="https://live.fanmingming.cn/tv/%E5%9B%BD%E5%AD%A6%E9%A2%91%E9%81%93.png" group-title="央视频",国学频道
 http://tlivecloud-playback-cdn.ysp.cctv.cn/tcloud.cctv.com/AC00F6C647F25516757DC74F93A4495763ED44F49F0E44A1217A31EAC0F7B5938CA76538750D7786BE144C46943FACE5905B1246226E5FEFD51E26EAC83DE08BEF7F4CA4D814958922560A69D8DE036C11C9198728FCF3A0C8A174D2C36A5A5E/2029360403.m3u8?starttime=1793208283&endtime=1793208583&svrtime=1793208600&sid=2029360403
+# ===== 央视·卫视(直播源) (61) =====
+# 该分组为第三方托管的 ysp-live 服务：持续直播（非快照），1080p 为主，含 4K
+#EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV-1%E7%BB%BC%E5%90%88.png" group-title="央视·卫视(直播源)",CCTV-1 综合
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv1.m3u8
+#EXTINF:-1 tvg-name="CCTV-2 财经" tvg-logo="https://live.fanmingming.cn/tv/CCTV-2%E8%B4%A2%E7%BB%8F.png" group-title="央视·卫视(直播源)",CCTV-2 财经
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv2.m3u8
+#EXTINF:-1 tvg-name="CCTV-3 综艺" tvg-logo="https://live.fanmingming.cn/tv/CCTV-3%E7%BB%BC%E8%89%BA.png" group-title="央视·卫视(直播源)",CCTV-3 综艺
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv3.m3u8
+#EXTINF:-1 tvg-name="CCTV-4 中文国际" tvg-logo="https://live.fanmingming.cn/tv/CCTV-4%E4%B8%AD%E6%96%87%E5%9B%BD%E9%99%85.png" group-title="央视·卫视(直播源)",CCTV-4 中文国际
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv4.m3u8
+#EXTINF:-1 tvg-name="CCTV-4K 超高清" tvg-logo="https://live.fanmingming.cn/tv/CCTV-4K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="央视·卫视(直播源)",CCTV-4K 超高清
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv4k.m3u8
+#EXTINF:-1 tvg-name="CCTV-5 体育" tvg-logo="https://live.fanmingming.cn/tv/CCTV-5%E4%BD%93%E8%82%B2.png" group-title="央视·卫视(直播源)",CCTV-5 体育
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv5.m3u8
+#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://live.fanmingming.cn/tv/CCTV-5%2B%E4%BD%93%E8%82%B2%E8%B5%9B%E4%BA%8B.png" group-title="央视·卫视(直播源)",CCTV-5+ 体育赛事
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv5p.m3u8
+#EXTINF:-1 tvg-name="CCTV-6 电影" tvg-logo="https://live.fanmingming.cn/tv/CCTV-6%E7%94%B5%E5%BD%B1.png" group-title="央视·卫视(直播源)",CCTV-6 电影
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv6.m3u8
+#EXTINF:-1 tvg-name="CCTV-7 国防军事" tvg-logo="https://live.fanmingming.cn/tv/CCTV-7%E5%9B%BD%E9%98%B2%E5%86%9B%E4%BA%8B.png" group-title="央视·卫视(直播源)",CCTV-7 国防军事
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv7.m3u8
+#EXTINF:-1 tvg-name="CCTV-8 电视剧" tvg-logo="https://live.fanmingming.cn/tv/CCTV-8%E7%94%B5%E8%A7%86%E5%89%A7.png" group-title="央视·卫视(直播源)",CCTV-8 电视剧
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv8.m3u8
+#EXTINF:-1 tvg-name="CCTV-8K 超高清" tvg-logo="https://live.fanmingming.cn/tv/CCTV-8K%E8%B6%85%E9%AB%98%E6%B8%85.png" group-title="央视·卫视(直播源)",CCTV-8K 超高清
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv8k.m3u8
+#EXTINF:-1 tvg-name="CCTV-9 纪录" tvg-logo="https://live.fanmingming.cn/tv/CCTV-9%E7%BA%AA%E5%BD%95.png" group-title="央视·卫视(直播源)",CCTV-9 纪录
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv9.m3u8
+#EXTINF:-1 tvg-name="CCTV-10 科教" tvg-logo="https://live.fanmingming.cn/tv/CCTV-10%E7%A7%91%E6%95%99.png" group-title="央视·卫视(直播源)",CCTV-10 科教
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv10.m3u8
+#EXTINF:-1 tvg-name="CCTV-12 社会与法" tvg-logo="https://live.fanmingming.cn/tv/CCTV-12%E7%A4%BE%E4%BC%9A%E4%B8%8E%E6%B3%95.png" group-title="央视·卫视(直播源)",CCTV-12 社会与法
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv12.m3u8
+#EXTINF:-1 tvg-name="CCTV-13 新闻" tvg-logo="https://live.fanmingming.cn/tv/CCTV-13%E6%96%B0%E9%97%BB.png" group-title="央视·卫视(直播源)",CCTV-13 新闻
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv13.m3u8
+#EXTINF:-1 tvg-name="CCTV-15 音乐" tvg-logo="https://live.fanmingming.cn/tv/CCTV-15%E9%9F%B3%E4%B9%90.png" group-title="央视·卫视(直播源)",CCTV-15 音乐
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv15.m3u8
+#EXTINF:-1 tvg-name="CCTV-16 4K" tvg-logo="https://live.fanmingming.cn/tv/CCTV-164K.png" group-title="央视·卫视(直播源)",CCTV-16 4K
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv164k.m3u8
+#EXTINF:-1 tvg-name="CCTV-17 农业农村" tvg-logo="https://live.fanmingming.cn/tv/CCTV-17%E5%86%9C%E4%B8%9A%E5%86%9C%E6%9D%91.png" group-title="央视·卫视(直播源)",CCTV-17 农业农村
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctv17.m3u8
+#EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="央视·卫视(直播源)",CGTN
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtn.m3u8
+#EXTINF:-1 tvg-name="CGTN 法语" tvg-logo="https://live.fanmingming.cn/tv/CGTN%E6%B3%95%E8%AF%AD.png" group-title="央视·卫视(直播源)",CGTN 法语
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtnfr.m3u8
+#EXTINF:-1 tvg-name="CGTN 俄语" tvg-logo="https://live.fanmingming.cn/tv/CGTN%E4%BF%84%E8%AF%AD.png" group-title="央视·卫视(直播源)",CGTN 俄语
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtnru.m3u8
+#EXTINF:-1 tvg-name="CGTN 阿拉伯语" tvg-logo="https://live.fanmingming.cn/tv/CGTN%E9%98%BF%E6%8B%89%E4%BC%AF%E8%AF%AD.png" group-title="央视·卫视(直播源)",CGTN 阿拉伯语
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtnar.m3u8
+#EXTINF:-1 tvg-name="CGTN 西班牙语" tvg-logo="https://live.fanmingming.cn/tv/CGTN%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AF%AD.png" group-title="央视·卫视(直播源)",CGTN 西班牙语
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtnes.m3u8
+#EXTINF:-1 tvg-name="CGTN 纪录" tvg-logo="https://live.fanmingming.cn/tv/CGTN%E7%BA%AA%E5%BD%95.png" group-title="央视·卫视(直播源)",CGTN 纪录
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cgtndoc.m3u8
+#EXTINF:-1 tvg-name="北京卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%8C%97%E4%BA%AC%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",北京卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/bjws.m3u8
+#EXTINF:-1 tvg-name="江苏卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B1%9F%E8%8B%8F%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",江苏卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/jsws.m3u8
+#EXTINF:-1 tvg-name="东方卫视" tvg-logo="https://live.fanmingming.cn/tv/%E4%B8%9C%E6%96%B9%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",东方卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/dfws.m3u8
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B5%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",浙江卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/zjws.m3u8
+#EXTINF:-1 tvg-name="湖南卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B9%96%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",湖南卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/hnws.m3u8
+#EXTINF:-1 tvg-name="湖北卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B9%96%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",湖北卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/hbws.m3u8
+#EXTINF:-1 tvg-name="广东卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%B9%BF%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",广东卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/gdws.m3u8
+#EXTINF:-1 tvg-name="广西卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%B9%BF%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",广西卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/gxws.m3u8
+#EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="https://live.fanmingming.cn/tv/%E9%BB%91%E9%BE%99%E6%B1%9F%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",黑龙江卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/hljws.m3u8
+#EXTINF:-1 tvg-name="海南卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B5%B7%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",海南卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/hainanws.m3u8
+#EXTINF:-1 tvg-name="重庆卫视" tvg-logo="https://live.fanmingming.cn/tv/%E9%87%8D%E5%BA%86%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",重庆卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cqws.m3u8
+#EXTINF:-1 tvg-name="深圳卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B7%B1%E5%9C%B3%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",深圳卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/szws.m3u8
+#EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%9B%9B%E5%B7%9D%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",四川卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/scws.m3u8
+#EXTINF:-1 tvg-name="河南卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B2%B3%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",河南卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/henanws.m3u8
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="https://live.fanmingming.cn/tv/%E4%B8%9C%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",东南卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/dnws.m3u8
+#EXTINF:-1 tvg-name="贵州卫视" tvg-logo="https://live.fanmingming.cn/tv/%E8%B4%B5%E5%B7%9E%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",贵州卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/gzws.m3u8
+#EXTINF:-1 tvg-name="江西卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B1%9F%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",江西卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/jxws.m3u8
+#EXTINF:-1 tvg-name="辽宁卫视" tvg-logo="https://live.fanmingming.cn/tv/%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",辽宁卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/lnws.m3u8
+#EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%AE%89%E5%BE%BD%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",安徽卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/ahws.m3u8
+#EXTINF:-1 tvg-name="河北卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%B2%B3%E5%8C%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",河北卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/hebws.m3u8
+#EXTINF:-1 tvg-name="山东卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%B1%B1%E4%B8%9C%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",山东卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/sdws.m3u8
+#EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%A4%A9%E6%B4%A5%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",天津卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/tjws.m3u8
+#EXTINF:-1 tvg-name="吉林卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%90%89%E6%9E%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",吉林卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/jlws.m3u8
+#EXTINF:-1 tvg-name="陕西卫视" tvg-logo="https://live.fanmingming.cn/tv/%E9%99%95%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",陕西卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/saxws.m3u8
+#EXTINF:-1 tvg-name="宁夏卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%AE%81%E5%A4%8F%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",宁夏卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/nxws.m3u8
+#EXTINF:-1 tvg-name="内蒙古卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%86%85%E8%92%99%E5%8F%A4%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",内蒙古卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/nmgws.m3u8
+#EXTINF:-1 tvg-name="云南卫视" tvg-logo="https://live.fanmingming.cn/tv/%E4%BA%91%E5%8D%97%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",云南卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/ynws.m3u8
+#EXTINF:-1 tvg-name="山西卫视" tvg-logo="https://live.fanmingming.cn/tv/%E5%B1%B1%E8%A5%BF%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",山西卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/shanxiws.m3u8
+#EXTINF:-1 tvg-name="甘肃卫视" tvg-logo="https://live.fanmingming.cn/tv/%E7%94%98%E8%82%83%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",甘肃卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/gsws.m3u8
+#EXTINF:-1 tvg-name="青海卫视" tvg-logo="https://live.fanmingming.cn/tv/%E9%9D%92%E6%B5%B7%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",青海卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/qhws.m3u8
+#EXTINF:-1 tvg-name="西藏卫视" tvg-logo="https://live.fanmingming.cn/tv/%E8%A5%BF%E8%97%8F%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",西藏卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/xizangws.m3u8
+#EXTINF:-1 tvg-name="新疆卫视" tvg-logo="https://live.fanmingming.cn/tv/%E6%96%B0%E7%96%86%E5%8D%AB%E8%A7%86.png" group-title="央视·卫视(直播源)",新疆卫视
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/xjws.m3u8
+#EXTINF:-1 tvg-name="CCTV 风云剧场" tvg-logo="https://live.fanmingming.cn/tv/CCTV%E9%A3%8E%E4%BA%91%E5%89%A7%E5%9C%BA.png" group-title="央视·卫视(直播源)",CCTV 风云剧场
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctvfyjc.m3u8
+#EXTINF:-1 tvg-name="CCTV 第一剧场" tvg-logo="https://live.fanmingming.cn/tv/CCTV%E7%AC%AC%E4%B8%80%E5%89%A7%E5%9C%BA.png" group-title="央视·卫视(直播源)",CCTV 第一剧场
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctvdyjc.m3u8
+#EXTINF:-1 tvg-name="CCTV 怀旧剧场" tvg-logo="https://live.fanmingming.cn/tv/CCTV%E6%80%80%E6%97%A7%E5%89%A7%E5%9C%BA.png" group-title="央视·卫视(直播源)",CCTV 怀旧剧场
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cctvhjjc.m3u8
+#EXTINF:-1 tvg-name="CETV-1" tvg-logo="https://live.fanmingming.cn/tv/CETV-1.png" group-title="央视·卫视(直播源)",CETV-1
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/cetv1.m3u8
+#EXTINF:-1 tvg-name="国学频道" tvg-logo="https://live.fanmingming.cn/tv/%E5%9B%BD%E5%AD%A6%E9%A2%91%E9%81%93.png" group-title="央视·卫视(直播源)",国学频道
+https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/guoxue.m3u8
 # ===== 央视 (17) =====
 #EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="https://live.fanmingming.cn/tv/CCTV1.png" group-title="央视",CCTV-1 综合
 http://74.91.26.218:82/live/cctv1hd.m3u8
