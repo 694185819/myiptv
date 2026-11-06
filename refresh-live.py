@@ -31,12 +31,14 @@ from concurrent.futures import ThreadPoolExecutor
 HERE = os.path.dirname(os.path.abspath(__file__))
 PLAYLIST = os.path.join(HERE, "IPTV-HD.m3u")
 SOURCE = "https://8080-agqxmx2vxrekc4op3mzvjdqvha.instabox.tech/all.m3u"
-GROUP = "央视·卫视(直播源)"
+GROUP = "央视频(直播源)"
+# 历史分组名：曾用名会在每次运行时自动清理，避免出现重复分组
+GROUP_ALIASES = ["央视·卫视(直播源)", "央视频"]
 FFPROBE = os.environ.get("FFPROBE", "ffprobe")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"
 
 # 分组在最终列表中的固定顺序（其余分组保持原顺序）
-ORDER_FIRST = ["超高清", "央视频", GROUP]
+ORDER_FIRST = ["超高清", GROUP, "央视", "卫视"]
 
 
 def log(msg):
@@ -118,6 +120,22 @@ def render(channels):
     return lines
 
 
+def parse_existing(lines):
+    """从现有播放列表中取出直播源分组的频道，用于失败时兜底保留。"""
+    head, groups, order = split_groups(lines)
+    existing = {}
+    for g in [GROUP] + GROUP_ALIASES:
+        body = groups.get(g) or []
+        cur = None
+        for line in body:
+            if line.startswith("#EXTINF"):
+                cur = line.rsplit(",", 1)[-1].strip()
+            elif line.strip() and not line.startswith("#") and cur:
+                existing[cur] = line.strip()
+                cur = None
+    return existing
+
+
 def split_groups(lines):
     """解析成 (head, {分组: [行]}, 顺序)。"""
     head, groups, order, cur = [], {}, [], None
@@ -190,9 +208,29 @@ def main():
     with ThreadPoolExecutor(max_workers=8) as ex:
         checked = list(ex.map(probe, items))
     live = [c for c in checked if c["h"] > 0]
+    dead = [c for c in checked if c["h"] <= 0]
+
+    # 兜底：单次探测失败可能只是网络抖动（尤其在 GitHub runner 上）。
+    # 对失效项串行重试一次，仍失败但上一版列表里存在的，保留原地址。
+    if dead and os.path.exists(PLAYLIST):
+        existing = parse_existing(open(PLAYLIST, encoding="utf-8").read().splitlines())
+        need_retry = [c for c in dead if c["name"] in existing]
+        if need_retry:
+            log(f"重试 {len(need_retry)} 个疑似抖动项…")
+            for c in need_retry:
+                probe(c)          # 串行重试，避免并发把 CDN 打满
+            recovered = [c for c in need_retry if c["h"] > 0]
+            kept = [c for c in need_retry if c["h"] <= 0]
+            if recovered:
+                log(f"  重试恢复 {len(recovered)} 个")
+            for c in kept:
+                log(f"  仍失败，沿用上次地址保留: {c['name']}")
+                live.append({"name": c["name"], "url": existing[c["name"]],
+                             "group": c.get("group", ""), "w": 0, "h": 0, "kept": True})
+    live += [c for c in dead if c["h"] > 0]
     live.sort(key=sort_key)
-    dead = [c["name"] for c in checked if c["h"] <= 0]
-    log(f"可用 {len(live)}/{len(checked)}" + (f"，失效: {dead}" if dead else ""))
+    gone = [c["name"] for c in dead if c["h"] <= 0 and c["name"] not in {x["name"] for x in live}]
+    log(f"可用 {len(live)}/{len(checked)}" + (f"，彻底失效(已移除): {gone}" if gone else ""))
 
     if args.check:
         for c in live:
@@ -203,6 +241,16 @@ def main():
         sys.exit(f"找不到 {PLAYLIST}")
     lines = open(PLAYLIST, encoding="utf-8").read().splitlines()
     head, groups, order = split_groups(lines)
+
+    # 清理历史遗留的重复分组，避免出现两个直播源分组
+    removed = []
+    for alias in GROUP_ALIASES:
+        if alias != GROUP and alias in groups:
+            removed.append((alias, sum(1 for l in groups[alias] if l.startswith("#EXTINF"))))
+            del groups[alias]
+            order = [o for o in order if o != alias]
+    if removed:
+        log("清理重复分组: " + ", ".join(f"{a}({n}条)" for a, n in removed))
 
     groups[GROUP] = render(live)
     update_uhd(groups, live)
