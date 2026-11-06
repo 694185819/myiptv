@@ -1,0 +1,41 @@
+name: 更新直播源分组
+
+on:
+  # 每天北京时间 06:00 和 18:00 各跑一次
+  schedule:
+    - cron: '0 22 * * *'   # UTC 22:00 = 北京时间 06:00
+    - cron: '0 10 * * *'   # UTC 10:00 = 北京时间 18:00
+  workflow_dispatch: {}     # 也支持在 Actions 页面手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+
+      - name: 安装 ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 刷新直播源分组
+        run: python refresh-live.py
+
+      - name: 提交变更
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet IPTV-HD.m3u; then
+            echo "无变化，跳过提交"
+          else
+            git add IPTV-HD.m3u
+            git commit -m "自动更新：刷新央视·卫视(直播源)分组 $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
