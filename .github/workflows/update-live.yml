@@ -1,11 +1,15 @@
 name: 更新直播源分组
 
 on:
-  # 每天北京时间 06:00 和 18:00 各跑一次
+  # 每天北京时间 06:00 跑一次
   schedule:
-    - cron: '0 22 * * *'   # UTC 22:00 = 北京时间 06:00
-    - cron: '0 10 * * *'   # UTC 10:00 = 北京时间 18:00
+    - cron: '0 22 * * *'   # UTC 22:00 = 北京时间次日 06:00
   workflow_dispatch: {}     # 也支持在 Actions 页面手动触发
+
+# 同一时间只允许一个实例，避免两次运行互相推推送冲突
+concurrency:
+  group: update-live
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -13,29 +17,56 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 15          # 卡死时自动失败，避免占用配额
     steps:
       - name: 检出仓库
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: 安装 ffmpeg
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          ffprobe -version | head -1
 
       - name: 设置 Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
+      # 刷新失败不阻塞后续步骤：refresh-live.py 在源失效时不改文件、正常退出；
+      # 这里再用 continue-on-error 兜住意外异常，保证不会因为网络问题让任务飘红。
       - name: 刷新直播源分组
+        id: refresh
+        continue-on-error: true
         run: python refresh-live.py
 
+      - name: 结果检查
+        if: steps.refresh.outcome != 'success'
+        run: |
+          echo "::warning::刷新脚本执行出错，本次跳过提交（文件未被修改）"
+
       - name: 提交变更
+        if: steps.refresh.outcome == 'success'
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if git diff --quiet IPTV-HD.m3u; then
             echo "无变化，跳过提交"
-          else
-            git add IPTV-HD.m3u
-            git commit -m "自动更新：刷新央视·卫视(直播源)分组 $(date +'%Y-%m-%d %H:%M')"
-            git push
+            exit 0
           fi
+          git add IPTV-HD.m3u
+          git commit -m "自动更新：刷新直播源分组 $(date +'%Y-%m-%d %H:%M')"
+          # 竞态/临时错误时重试推送
+          for i in 1 2 3; do
+            if git push; then
+              echo "推送成功"
+              exit 0
+            fi
+            echo "第 $i 次推送失败，5 秒后重试…"
+            sleep 5
+            git pull --rebase --autostash || true
+          done
+          echo "::error::推送重试 3 次仍失败"
+          exit 1
