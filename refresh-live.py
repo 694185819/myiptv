@@ -45,10 +45,33 @@ def log(msg):
     print(msg, flush=True)
 
 
-def fetch_playlist():
-    req = urllib.request.Request(SOURCE, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return r.read().decode("utf-8", "replace")
+class SourceDead(Exception):
+    """上游源不可用（404/域名失效/长时间超时），非临时网络抖动。"""
+
+
+def fetch_playlist(retries=3):
+    """拉取上游订阅。404 视为源已关停，直接抛出 SourceDead；临时错误重试。"""
+    last = None
+    for i in range(retries):
+        try:
+            req = urllib.request.Request(SOURCE, headers={"User-Agent": UA})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                text = r.read().decode("utf-8", "replace")
+            if "#EXTINF" not in text:
+                raise RuntimeError("订阅内容不是有效 m3u")
+            return text
+        except urllib.error.HTTPError as e:
+            last = e
+            # 404/410：源已下线，重试没有意义
+            if e.code in (404, 410, 403):
+                raise SourceDead(f"HTTP {e.code}") from e
+            log(f"  拉取失败({e.code})，第 {i + 1}/{retries} 次，准备重试…")
+        except Exception as e:
+            last = e
+            log(f"  拉取失败({type(e).__name__})，第 {i + 1}/{retries} 次，准备重试…")
+        if i < retries - 1:
+            time.sleep(5 * (i + 1))
+    raise SourceDead(str(last)[:120])
 
 
 def parse(text):
@@ -201,7 +224,21 @@ def main():
     args = ap.parse_args()
 
     log(f"拉取订阅: {SOURCE}")
-    text = fetch_playlist()
+    try:
+        text = fetch_playlist()
+    except SourceDead as e:
+        # 上游已关停：不改动文件，以「成功」退出，避免每次定时任务都飘红。
+        # 同时写入告警标记，便于在 Actions 摘要里看到。
+        log(f"⚠️ 上游源不可用（{e}）。")
+        log("   本次不做任何修改，保留现有播放列表内容。")
+        dead_marker = os.environ.get("GITHUB_STEP_SUMMARY")
+        if dead_marker:
+            with open(dead_marker, "a", encoding="utf-8") as f:
+                f.write(f"## ⚠️ 上游直播源不可用\n\n`{SOURCE}`\n\n错误：{e}\n\n"
+                        "本次未修改 `IPTV-HD.m3u`，现有分组保持不变。\n\n"
+                        "请检查该源是否已停止服务；如已停止，需要更换 SOURCE 或移除对应分组。\n")
+        sys.exit(0)
+
     items = parse(text)
     log(f"订阅共 {len(items)} 个频道，开始实测…")
 
@@ -231,6 +268,11 @@ def main():
     live.sort(key=sort_key)
     gone = [c["name"] for c in dead if c["h"] <= 0 and c["name"] not in {x["name"] for x in live}]
     log(f"可用 {len(live)}/{len(checked)}" + (f"，彻底失效(已移除): {gone}" if gone else ""))
+
+    # 全部频道都探测失败 = 源整体故障，同样不要写坏文件
+    if not live:
+        log("⚠️ 订阅中没有任何可用频道，判定为源整体故障，本次不修改文件。")
+        sys.exit(0)
 
     if args.check:
         for c in live:
